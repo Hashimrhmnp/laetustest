@@ -1,37 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:url" content="https://laetuscreations.github.io/web/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Laetus Creations" />
+    <meta
+      property="og:description"
+      content="A Design Agency for the Digital Era"
+    />
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/laetuscreations/web/main/images/laetus%20logo.png"
+    />
+    <meta
+      property="og:image:secure_url"
+      content="https://raw.githubusercontent.com/laetuscreations/web/main/images/laetus%20logo.png"
+    />
+    <meta property="og:image:alt" content="Laetus Creations" />
+    <meta property="og:image:type" content="image/png" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="images/leatus-logo.svg"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="style.css" />
-    <title>Welcome</title>
-</head>
-<body>
-    <div class="welcome-container">
-        <hr>
-        <header>
-            <div class="text">
-                <h2>Hey...!!!!</h2>
-                <h2 class="primary-color">Laetus Creations Here.</h2>
-                <p class="add-symbols">++++</p>
-                <div class="contact-row">
-                    <img src="images/ui-icons/mail.svg" alt="">
-                    <a href="mailto:laetuscreation@gmail.com">laetuscreation@gmail.com</a>
-                </div>
-                <div class="contact-row">
-                    <img src="images/ui-icons/call.svg" alt="">
-                    <a href="tel:+917025467544">+917025467544</a>
-                </div>
-                <div class="contact-row">
-                    <img src="images/ui-icons/whatsapp.svg" alt="">
-                    <a href="tel:+917025467544">+917025467544</a>
-                </div>
-                <a href="/#contact" class="welcome-contact-btn">Contact Us</a>
-            </div>
-            <img class="astro-laptop" src="images/astro-with-laptop.svg" alt="welcome">
-        </header>
-        <a href="/" class="welcome-contact-btn">Click Here</a>
+    <title>Laetus Creations</title>
+  </head>
+  <body>
+    <!-- [ NAVBAR ] -->
+    <div class="navigation">
+      <div class="nav-container">
+        <div class="brand">
+          <a href="#"
+            ><img src="images/leatus-logo.svg" alt="" class="logo"
+          /></a>
+        </div>
+        <nav>
+          <div class="nav-mobile">
+            <a id="nav-toggle" href="#!"><span></span></a>
+          </div>
+          <ul class="nav-list">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#testimonials">Clients</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </nav>
+        <a class="connect-btn" href="https://wa.me/+917025467544" target="_blank">
+          <img src="images/ui-icons/whatsapp-icon.svg" alt="" />
+          Connect
+        </a>
+      </div>
     </div>
-</body>
+    <!-- NAVBAR END -->
+
+    <header>
+      <div class="container header-items">
+        <div class="header-content">
+          <h1>A Design Agency for the <span> Digital Era</span></h1>
+          <p>
+            Laetus is a freelance company that give your publicity a
+            professional touch by branding it and adding research, design, and
+            content
+          </p>
+          <a class="cta" href="#contact"> Connect with Us </a>
+        </div>
+        <div class="header-img">
+          <img src="images/astro.svg" alt="" />
+        </div>
+      </div>
+    </header>
+
+    <!-- Clients -->
+    <section id="clients">
+      <div class="container">
+        <div class="clients"></div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services">
+      <div class="container">
+        <h2>Services</h2>
+        <div class="services-grid"></div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <div id="projects-carousel">
+          <img
+            class="carousel-button carousel-button-prev"
+            src="images/ui-icons/arrow-left.svg"
+            alt="Previous"
+          />
+          <img
+            class="carousel-button carousel-button-next"
+            src="images/ui-icons/arrow-right.svg"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+
+    <section id="testimonials">
+      <div class="container">
+        <h2>Our Valuable Clients</h2>
+        <div id="carousel-wrapper">
+          <div id="carousel">
+            <img
+              class="prev-button carousel-button"
+              src="images/ui-icons/arrow-left.svg"
+              alt="Previous"
+            />
+            <img
+              class="next-button carousel-button"
+              src="images/ui-icons/arrow-right.svg"
+              alt=""
+            />
+            <div id="carousel-inner">
+              <!-- Carousel items will be dynamically added here -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="logoRotate-wrapper">
+        <img class="logoRotate" src="images/logoRotate.svg" alt="" />
+      </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <div class="contact-body">
+          <img src="images/Contact.svg" alt="" />
+          <div class="contact-form">
+            <form id="contact-form" method="post">
+              <fieldset>
+                <label for="name">Hi, I'm</label>
+                <input type="text" id="name" placeholder="Your name" required />
+              </fieldset>
+              <fieldset>
+                <label for="email">Reach me at</label>
+                <input
+                  type="email"
+                  id="email"
+                  required
+                  placeholder="abc@example.com"
+                />
+              </fieldset>
+              <fieldset class="msg">
+                <label for="msg">Here is what I have to say</label>
+                <textarea
+                  id="msg"
+                  placeholder="Your message"
+                  required
+                ></textarea>
+              </fieldset>
+              <button type="submit">Send</button>
+            </form>
+          </div>
+        </div>
+        <div class="contact-mediums">
+          <div class="phone">
+            <h3>Phone</h3>
+            <a href="tel:+917025467544">+91 7025 467 544</a>
+            <br />
+            <a href="tel:+918542216452">+91 8542 216 452</a>
+          </div>
+          <div class="social">
+            <a href="https://wa.me/+917025467544" target="_blank">
+              <img src="images/ui-icons/whatsapp-icon.svg" alt="" />
+            </a>
+            <a
+              href="https://www.instagram.com/laetus_creations/"
+              target="_blank"
+            >
+              <img src="images/ui-icons/instagram-icon.svg" alt="" />
+            </a>
+            <a href="mailto:laetuscreation@gmail.com" target="_blank">
+              <img src="images/ui-icons/mail-icon.svg" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JS -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="index.js"></script>
+  </body>
 </html>
